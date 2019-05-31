@@ -1,0 +1,378 @@
+[
+  {
+    "description": "    Everybody wants to know when it's Friday",
+    "keyword": "Feature",
+    "name": "Is it Friday yet?",
+    "line": 1,
+    "id": "is-it-friday-yet?",
+    "tags": [],
+    "uri": "features\\simlp_math.feature",
+    "elements": [
+      {
+        "id": "is-it-friday-yet?;today-is-or-is-not-friday",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Today is or is not Friday",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "something",
+            "match": {
+              "location": "features\\step_definitions\\step_definitions.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 32000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "today is \"Friday\"",
+            "match": {
+              "location": "features\\step_definitions\\step_definitions.js:44"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I ask whether it's Friday yet",
+            "match": {
+              "location": "features\\step_definitions\\step_definitions.js:48"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I should be told \"TGIF\"",
+            "match": {
+              "location": "features\\step_definitions\\step_definitions.js:52"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "is-it-friday-yet?;today-is-or-is-not-friday",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Today is or is not Friday",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "something",
+            "match": {
+              "location": "features\\step_definitions\\step_definitions.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "today is \"Sunday\"",
+            "match": {
+              "location": "features\\step_definitions\\step_definitions.js:44"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I ask whether it's Friday yet",
+            "match": {
+              "location": "features\\step_definitions\\step_definitions.js:48"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I should be told \"Nope\"",
+            "match": {
+              "location": "features\\step_definitions\\step_definitions.js:52"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "is-it-friday-yet?;today-is-or-is-not-friday",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Today is or is not Friday",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "something",
+            "match": {
+              "location": "features\\step_definitions\\step_definitions.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "today is \"anything else!\"",
+            "match": {
+              "location": "features\\step_definitions\\step_definitions.js:44"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I ask whether it's Friday yet",
+            "match": {
+              "location": "features\\step_definitions\\step_definitions.js:48"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I should be told \"Nope\"",
+            "match": {
+              "location": "features\\step_definitions\\step_definitions.js:52"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "is-it-friday-yet?;easy-maths",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "easy maths",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 17,
+            "name": "a variable set to 1",
+            "match": {
+              "location": "features\\step_definitions\\step_definitions.js:80"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 18,
+            "name": "I increment the variable by 1",
+            "match": {
+              "location": "features\\step_definitions\\step_definitions.js:84"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "the variable should contain 2",
+            "match": {
+              "location": "features\\step_definitions\\step_definitions.js:88"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "is-it-friday-yet?;much-more-complex-stuff",
+        "keyword": "Scenario",
+        "line": 28,
+        "name": "much more complex stuff",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 22,
+            "name": "a variable set to 100",
+            "match": {
+              "location": "features\\step_definitions\\step_definitions.js:80"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 23,
+            "name": "I increment the variable by 5",
+            "match": {
+              "location": "features\\step_definitions\\step_definitions.js:84"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "the variable should contain 105",
+            "match": {
+              "location": "features\\step_definitions\\step_definitions.js:88"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "is-it-friday-yet?;much-more-complex-stuff",
+        "keyword": "Scenario",
+        "line": 29,
+        "name": "much more complex stuff",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 22,
+            "name": "a variable set to 99",
+            "match": {
+              "location": "features\\step_definitions\\step_definitions.js:80"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 23,
+            "name": "I increment the variable by 1234",
+            "match": {
+              "location": "features\\step_definitions\\step_definitions.js:84"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "the variable should contain 1333",
+            "match": {
+              "location": "features\\step_definitions\\step_definitions.js:88"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "is-it-friday-yet?;much-more-complex-stuff",
+        "keyword": "Scenario",
+        "line": 30,
+        "name": "much more complex stuff",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 22,
+            "name": "a variable set to 12",
+            "match": {
+              "location": "features\\step_definitions\\step_definitions.js:80"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 23,
+            "name": "I increment the variable by 5",
+            "match": {
+              "location": "features\\step_definitions\\step_definitions.js:84"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "the variable should contain 18",
+            "match": {
+              "location": "features\\step_definitions\\step_definitions.js:88"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 2000000,
+              "error_message": "AssertionError\n    + expected - actual\n\n    -17\n    +18\n\n    at World.<anonymous> (C:\\SeleniumCucumberJSTest\\features\\step_definitions\\step_definitions.js:89:30)"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

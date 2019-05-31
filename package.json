@@ -1,7 +1,6 @@
 {
   "name": "seleniumcucumberjstest",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "cucumber-js"
@@ -17,6 +16,13 @@
   },
   "homepage": "https://github.com/AndriiSakiienko/SeleniumCucumberJSTest#readme",
   "devDependencies": {
-    "cucumber": "^5.1.0"
-  }
+    "cucumber": "^5.1.0",
+    "cucumber-html-reporter": "^5.0.0"
+  },
+  "dependencies": {
+    "chai": "^4.2.0",
+    "require": "^2.4.20",
+    "selenium": "^2.20.0"
+  },
+  "description": ""
 }
