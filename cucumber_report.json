@@ -1,18 +1,18 @@
 [
   {
-    "description": "    Everybody wants to know when it's Friday",
+    "description": "    Test script include different scenarios",
     "keyword": "Feature",
-    "name": "Is it Friday yet?",
+    "name": "explore Cucumber and Gherkin with REST API",
     "line": 1,
-    "id": "is-it-friday-yet?",
+    "id": "explore-cucumber-and-gherkin-with-rest-api",
     "tags": [],
     "uri": "features\\simlp_math.feature",
     "elements": [
       {
-        "id": "is-it-friday-yet?;today-is-or-is-not-friday",
+        "id": "explore-cucumber-and-gherkin-with-rest-api;explore-rest-api",
         "keyword": "Scenario",
-        "line": 12,
-        "name": "Today is or is not Friday",
+        "line": 4,
+        "name": "explore REST API",
         "tags": [],
         "type": "scenario",
         "steps": [
@@ -20,22 +20,57 @@
             "arguments": [],
             "keyword": "Given ",
             "line": 5,
-            "name": "something",
+            "name": "request to url",
             "match": {
-              "location": "features\\step_definitions\\step_definitions.js:17"
+              "location": "features\\step_definitions\\step_definitions.js:62"
             },
             "result": {
-              "status": "passed",
-              "duration": 32000000
+              "status": "failed",
+              "duration": 21000000,
+              "error_message": "AssertionError: expected {} to equal 301\n    at World.<anonymous> (C:\\SeleniumCucumberJSTest\\features\\step_definitions\\step_definitions.js:70:20)"
             }
           },
           {
             "arguments": [],
-            "keyword": "Given ",
+            "keyword": "When ",
             "line": 6,
+            "name": "enter some date",
+            "match": {
+              "location": "features\\step_definitions\\step_definitions.js:99"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "get some response",
+            "match": {
+              "location": "features\\step_definitions\\step_definitions.js:104"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "explore-cucumber-and-gherkin-with-rest-api;today-is-or-is-not-friday",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "Today is or is not Friday",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
             "name": "today is \"Friday\"",
             "match": {
-              "location": "features\\step_definitions\\step_definitions.js:44"
+              "location": "features\\step_definitions\\step_definitions.js:116"
             },
             "result": {
               "status": "passed"
@@ -44,10 +79,10 @@
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 7,
+            "line": 12,
             "name": "I ask whether it's Friday yet",
             "match": {
-              "location": "features\\step_definitions\\step_definitions.js:48"
+              "location": "features\\step_definitions\\step_definitions.js:120"
             },
             "result": {
               "status": "passed"
@@ -56,22 +91,21 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 8,
+            "line": 13,
             "name": "I should be told \"TGIF\"",
             "match": {
-              "location": "features\\step_definitions\\step_definitions.js:52"
+              "location": "features\\step_definitions\\step_definitions.js:124"
             },
             "result": {
-              "status": "passed",
-              "duration": 1000000
+              "status": "passed"
             }
           }
         ]
       },
       {
-        "id": "is-it-friday-yet?;today-is-or-is-not-friday",
+        "id": "explore-cucumber-and-gherkin-with-rest-api;today-is-or-is-not-friday",
         "keyword": "Scenario",
-        "line": 13,
+        "line": 18,
         "name": "Today is or is not Friday",
         "tags": [],
         "type": "scenario",
@@ -79,23 +113,10 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 5,
-            "name": "something",
-            "match": {
-              "location": "features\\step_definitions\\step_definitions.js:17"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 6,
+            "line": 11,
             "name": "today is \"Sunday\"",
             "match": {
-              "location": "features\\step_definitions\\step_definitions.js:44"
+              "location": "features\\step_definitions\\step_definitions.js:116"
             },
             "result": {
               "status": "passed"
@@ -104,44 +125,10 @@
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 7,
+            "line": 12,
             "name": "I ask whether it's Friday yet",
             "match": {
-              "location": "features\\step_definitions\\step_definitions.js:48"
-            },
-            "result": {
-              "status": "passed"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 8,
-            "name": "I should be told \"Nope\"",
-            "match": {
-              "location": "features\\step_definitions\\step_definitions.js:52"
-            },
-            "result": {
-              "status": "passed"
-            }
-          }
-        ]
-      },
-      {
-        "id": "is-it-friday-yet?;today-is-or-is-not-friday",
-        "keyword": "Scenario",
-        "line": 14,
-        "name": "Today is or is not Friday",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 5,
-            "name": "something",
-            "match": {
-              "location": "features\\step_definitions\\step_definitions.js:17"
+              "location": "features\\step_definitions\\step_definitions.js:120"
             },
             "result": {
               "status": "passed",
@@ -150,35 +137,11 @@
           },
           {
             "arguments": [],
-            "keyword": "Given ",
-            "line": 6,
-            "name": "today is \"anything else!\"",
-            "match": {
-              "location": "features\\step_definitions\\step_definitions.js:44"
-            },
-            "result": {
-              "status": "passed"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 7,
-            "name": "I ask whether it's Friday yet",
-            "match": {
-              "location": "features\\step_definitions\\step_definitions.js:48"
-            },
-            "result": {
-              "status": "passed"
-            }
-          },
-          {
-            "arguments": [],
             "keyword": "Then ",
-            "line": 8,
+            "line": 13,
             "name": "I should be told \"Nope\"",
             "match": {
-              "location": "features\\step_definitions\\step_definitions.js:52"
+              "location": "features\\step_definitions\\step_definitions.js:124"
             },
             "result": {
               "status": "passed"
@@ -187,9 +150,55 @@
         ]
       },
       {
-        "id": "is-it-friday-yet?;easy-maths",
+        "id": "explore-cucumber-and-gherkin-with-rest-api;today-is-or-is-not-friday",
         "keyword": "Scenario",
-        "line": 16,
+        "line": 19,
+        "name": "Today is or is not Friday",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "today is \"anything else!\"",
+            "match": {
+              "location": "features\\step_definitions\\step_definitions.js:116"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I ask whether it's Friday yet",
+            "match": {
+              "location": "features\\step_definitions\\step_definitions.js:120"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "I should be told \"Nope\"",
+            "match": {
+              "location": "features\\step_definitions\\step_definitions.js:124"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "explore-cucumber-and-gherkin-with-rest-api;easy-maths",
+        "keyword": "Scenario",
+        "line": 21,
         "name": "easy maths",
         "tags": [],
         "type": "scenario",
@@ -197,10 +206,10 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 17,
+            "line": 22,
             "name": "a variable set to 1",
             "match": {
-              "location": "features\\step_definitions\\step_definitions.js:80"
+              "location": "features\\step_definitions\\step_definitions.js:128"
             },
             "result": {
               "status": "passed"
@@ -209,10 +218,10 @@
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 18,
+            "line": 23,
             "name": "I increment the variable by 1",
             "match": {
-              "location": "features\\step_definitions\\step_definitions.js:84"
+              "location": "features\\step_definitions\\step_definitions.js:132"
             },
             "result": {
               "status": "passed"
@@ -221,10 +230,10 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 19,
+            "line": 24,
             "name": "the variable should contain 2",
             "match": {
-              "location": "features\\step_definitions\\step_definitions.js:88"
+              "location": "features\\step_definitions\\step_definitions.js:136"
             },
             "result": {
               "status": "passed",
@@ -234,9 +243,9 @@
         ]
       },
       {
-        "id": "is-it-friday-yet?;much-more-complex-stuff",
+        "id": "explore-cucumber-and-gherkin-with-rest-api;much-more-complex-stuff",
         "keyword": "Scenario",
-        "line": 28,
+        "line": 33,
         "name": "much more complex stuff",
         "tags": [],
         "type": "scenario",
@@ -244,10 +253,10 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 22,
+            "line": 27,
             "name": "a variable set to 100",
             "match": {
-              "location": "features\\step_definitions\\step_definitions.js:80"
+              "location": "features\\step_definitions\\step_definitions.js:128"
             },
             "result": {
               "status": "passed"
@@ -256,10 +265,10 @@
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 23,
+            "line": 28,
             "name": "I increment the variable by 5",
             "match": {
-              "location": "features\\step_definitions\\step_definitions.js:84"
+              "location": "features\\step_definitions\\step_definitions.js:132"
             },
             "result": {
               "status": "passed"
@@ -268,10 +277,10 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 24,
+            "line": 29,
             "name": "the variable should contain 105",
             "match": {
-              "location": "features\\step_definitions\\step_definitions.js:88"
+              "location": "features\\step_definitions\\step_definitions.js:136"
             },
             "result": {
               "status": "passed"
@@ -280,9 +289,9 @@
         ]
       },
       {
-        "id": "is-it-friday-yet?;much-more-complex-stuff",
+        "id": "explore-cucumber-and-gherkin-with-rest-api;much-more-complex-stuff",
         "keyword": "Scenario",
-        "line": 29,
+        "line": 34,
         "name": "much more complex stuff",
         "tags": [],
         "type": "scenario",
@@ -290,10 +299,10 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 22,
+            "line": 27,
             "name": "a variable set to 99",
             "match": {
-              "location": "features\\step_definitions\\step_definitions.js:80"
+              "location": "features\\step_definitions\\step_definitions.js:128"
             },
             "result": {
               "status": "passed"
@@ -302,10 +311,10 @@
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 23,
+            "line": 28,
             "name": "I increment the variable by 1234",
             "match": {
-              "location": "features\\step_definitions\\step_definitions.js:84"
+              "location": "features\\step_definitions\\step_definitions.js:132"
             },
             "result": {
               "status": "passed"
@@ -314,10 +323,10 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 24,
+            "line": 29,
             "name": "the variable should contain 1333",
             "match": {
-              "location": "features\\step_definitions\\step_definitions.js:88"
+              "location": "features\\step_definitions\\step_definitions.js:136"
             },
             "result": {
               "status": "passed"
@@ -326,9 +335,9 @@
         ]
       },
       {
-        "id": "is-it-friday-yet?;much-more-complex-stuff",
+        "id": "explore-cucumber-and-gherkin-with-rest-api;much-more-complex-stuff",
         "keyword": "Scenario",
-        "line": 30,
+        "line": 35,
         "name": "much more complex stuff",
         "tags": [],
         "type": "scenario",
@@ -336,10 +345,10 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 22,
+            "line": 27,
             "name": "a variable set to 12",
             "match": {
-              "location": "features\\step_definitions\\step_definitions.js:80"
+              "location": "features\\step_definitions\\step_definitions.js:128"
             },
             "result": {
               "status": "passed"
@@ -348,10 +357,10 @@
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 23,
+            "line": 28,
             "name": "I increment the variable by 5",
             "match": {
-              "location": "features\\step_definitions\\step_definitions.js:84"
+              "location": "features\\step_definitions\\step_definitions.js:132"
             },
             "result": {
               "status": "passed"
@@ -360,15 +369,13 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 24,
-            "name": "the variable should contain 18",
+            "line": 29,
+            "name": "the variable should contain 17",
             "match": {
-              "location": "features\\step_definitions\\step_definitions.js:88"
+              "location": "features\\step_definitions\\step_definitions.js:136"
             },
             "result": {
-              "status": "failed",
-              "duration": 2000000,
-              "error_message": "AssertionError\n    + expected - actual\n\n    -17\n    +18\n\n    at World.<anonymous> (C:\\SeleniumCucumberJSTest\\features\\step_definitions\\step_definitions.js:89:30)"
+              "status": "passed"
             }
           }
         ]

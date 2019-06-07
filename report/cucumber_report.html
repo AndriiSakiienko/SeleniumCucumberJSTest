@@ -271,7 +271,7 @@ pre {
           <a class="navbar-brand">Cucumberjs Report</a>
           <div class="project-name visible-md visible-lg">seleniumcucumberjstest</div>
           <div class="label-container">
-            <span class="label label-success" title=scenarios>Passed: 6</span>
+            <span class="label label-success" title=scenarios>Passed: 7</span>
             <span class="label label-danger" title=scenarios>Failed: 1</span>
           </div>
         </div>
@@ -280,7 +280,7 @@ pre {
 
     <div class="container">
 
-      <div class="generated-on">Fri May 31 2019 17:25:01 GMT+0300 (Eastern European Summer Time)</div>
+      <div class="generated-on">Fri Jun 07 2019 14:11:28 GMT+0300 (Eastern European Summer Time)</div>
 
       <div class="row">
         <div class="chart col-lg-6 col-md-6" id="piechart_features"></div>
@@ -372,10 +372,10 @@ pre {
                     <a data-toggle="collapse" href="#collapseFeatureseleniumcucumberjstest0">
                         <i class="glyphicon glyphicon-chevron-right"></i>
                         <i class="glyphicon glyphicon-chevron-down"></i>
-                        <b>Feature:</b>Is it Friday yet?
+                        <b>Feature:</b>explore Cucumber and Gherkin with REST API
                         <span class="label-container">
               <span class="label label-success"
-                                                         title="6 Scenarios Passed">6</span>
+                                                         title="7 Scenarios Passed">7</span>
               <span class="label label-danger"
                                                          title="1 Scenarios Failed">1</span>
               
@@ -389,7 +389,7 @@ pre {
             <div id="collapseFeatureseleniumcucumberjstest0" class="panel-collapse collapse">
                 <div class="panel-body">
                     
-                    <div class="description">    Everybody wants to know when it's Friday</div>
+                    <div class="description">    Test script include different scenarios</div>
                     
                     
                     <div class="panel panel-default">
@@ -404,19 +404,20 @@ pre {
                                    href="#collapseScenarioseleniumcucumberjstest0_0">
                                     <div>
 
-                                        <div style="padding-right: 30px">
+                                        <div style="padding-right: 50px">
                                             <i class="glyphicon glyphicon-chevron-right"></i>
                                             <i class="glyphicon glyphicon-chevron-down"></i>
-                                            <b>Scenario:</b>Today is or is not Friday
+                                            <b>Scenario:</b>explore REST API
                                         </div>
                                         <div>
                             <span class="label-container">
-                              <span class="label label-success"
-                                                               title="4 Steps Passed">4</span>
                               
                               
                               
-                              
+                              <span class="label label-warning"
+                                                                title="2 Steps Skipped">2</span>
+                              <span class="label label-danger"
+                                                               title="1 Steps Failed">1</span>
                               
                             </span>
                                         </div>
@@ -434,17 +435,97 @@ pre {
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
+                                    <span class="label label-danger" title="Failed"><i
+                                            class="glyphicon glyphicon-remove"></i></span>
                                     
                                     
                                     <span class="text">
                         <span class="keyword highlight">Given </span>
-                          <span> something</span>
+                          <span> request to url</span>
                             
                           
                               <span class="step-duration">
-                               32ms
+                               21ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                               
+                      </span>
+                                
+                                
+
+                                    
+                                    <a href="#error0_00"
+                                       data-toggle="collapse" class="toggle">Show Error +</a>
+                                    <div id="error0_00"
+                                         class="collapse">
+                                        <pre class="info show-modal"
+                                             data-toggle="modal"
+                                             style="cursor: pointer"
+                                             data-target="#error-modal-0_00">
+                                            <br> AssertionError: expected {} to equal 301
+    at World.(anonymous) (C:\SeleniumCucumberJSTest\features\step_definitions\step_definitions.js:70:20)</pre>
+                                    </div>
+
+                                <div class="modal fade" id="error-modal-0_00" tabindex="-1" role="dialog"
+                                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                                </button>
+                                                <h4 class="modal-title" id="error-modal-title">
+                                                    Error
+                                                </h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h5>
+                                                    <pre><br>AssertionError: expected {} to equal 301
+    at World.(anonymous) (C:\SeleniumCucumberJSTest\features\step_definitions\step_definitions.js:70:20)</pre>
+                                                </h5>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                                    Close
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-warning" title="Skipped"><i
+                                            class="glyphicon glyphicon-minus"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">When </span>
+                          <span> enter some date</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
                               </span>
                             
                          
@@ -465,6 +546,85 @@ pre {
                                     
                                 </div>
                                 </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-warning" title="Skipped"><i
+                                            class="glyphicon glyphicon-minus"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span> get some response</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                               
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags">
+                                </div>
+                                
+                                <a data-toggle="collapse"
+                                   href="#collapseScenarioseleniumcucumberjstest0_1">
+                                    <div>
+
+                                        <div style="padding-right: 30px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b>Today is or is not Friday
+                                        </div>
+                                        <div>
+                            <span class="label-container">
+                              <span class="label label-success"
+                                                               title="3 Steps Passed">3</span>
+                              
+                              
+                              
+                              
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenarioseleniumcucumberjstest0_1"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
                                 
                                 
                                 
@@ -558,7 +718,7 @@ pre {
                             
                           
                               <span class="step-duration">
-                               1ms
+                               0s
                               </span>
                             
                          
@@ -594,7 +754,7 @@ pre {
                                 </div>
                                 
                                 <a data-toggle="collapse"
-                                   href="#collapseScenarioseleniumcucumberjstest0_1">
+                                   href="#collapseScenarioseleniumcucumberjstest0_2">
                                     <div>
 
                                         <div style="padding-right: 30px">
@@ -605,7 +765,7 @@ pre {
                                         <div>
                             <span class="label-container">
                               <span class="label label-success"
-                                                               title="4 Steps Passed">4</span>
+                                                               title="3 Steps Passed">3</span>
                               
                               
                               
@@ -617,47 +777,9 @@ pre {
                                 </a>
                             </h4>
                         </div>
-                        <div id="collapseScenarioseleniumcucumberjstest0_1"
+                        <div id="collapseScenarioseleniumcucumberjstest0_2"
                              class="panel-collapse collapse">
                             <div class="panel-body">
-                                
-                                
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
-                        <span class="keyword highlight">Given </span>
-                          <span> something</span>
-                            
-                          
-                              <span class="step-duration">
-                               1ms
-                              </span>
-                            
-                         
-                            
-                          
-                          <!-- Adding data table data-->
-                               
-                      </span>
-                                
-                                
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                </div>
-                                </p>
                                 
                                 
                                 
@@ -713,7 +835,7 @@ pre {
                             
                           
                               <span class="step-duration">
-                               0s
+                               1ms
                               </span>
                             
                          
@@ -787,7 +909,7 @@ pre {
                                 </div>
                                 
                                 <a data-toggle="collapse"
-                                   href="#collapseScenarioseleniumcucumberjstest0_2">
+                                   href="#collapseScenarioseleniumcucumberjstest0_3">
                                     <div>
 
                                         <div style="padding-right: 30px">
@@ -798,7 +920,7 @@ pre {
                                         <div>
                             <span class="label-container">
                               <span class="label label-success"
-                                                               title="4 Steps Passed">4</span>
+                                                               title="3 Steps Passed">3</span>
                               
                               
                               
@@ -810,47 +932,9 @@ pre {
                                 </a>
                             </h4>
                         </div>
-                        <div id="collapseScenarioseleniumcucumberjstest0_2"
+                        <div id="collapseScenarioseleniumcucumberjstest0_3"
                              class="panel-collapse collapse">
                             <div class="panel-body">
-                                
-                                
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
-                        <span class="keyword highlight">Given </span>
-                          <span> something</span>
-                            
-                          
-                              <span class="step-duration">
-                               1ms
-                              </span>
-                            
-                         
-                            
-                          
-                          <!-- Adding data table data-->
-                               
-                      </span>
-                                
-                                
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                </div>
-                                </p>
                                 
                                 
                                 
@@ -980,7 +1064,7 @@ pre {
                                 </div>
                                 
                                 <a data-toggle="collapse"
-                                   href="#collapseScenarioseleniumcucumberjstest0_3">
+                                   href="#collapseScenarioseleniumcucumberjstest0_4">
                                     <div>
 
                                         <div style="padding-right: 30px">
@@ -1003,7 +1087,7 @@ pre {
                                 </a>
                             </h4>
                         </div>
-                        <div id="collapseScenarioseleniumcucumberjstest0_3"
+                        <div id="collapseScenarioseleniumcucumberjstest0_4"
                              class="panel-collapse collapse">
                             <div class="panel-body">
                                 
@@ -1135,7 +1219,7 @@ pre {
                                 </div>
                                 
                                 <a data-toggle="collapse"
-                                   href="#collapseScenarioseleniumcucumberjstest0_4">
+                                   href="#collapseScenarioseleniumcucumberjstest0_5">
                                     <div>
 
                                         <div style="padding-right: 30px">
@@ -1158,7 +1242,7 @@ pre {
                                 </a>
                             </h4>
                         </div>
-                        <div id="collapseScenarioseleniumcucumberjstest0_4"
+                        <div id="collapseScenarioseleniumcucumberjstest0_5"
                              class="panel-collapse collapse">
                             <div class="panel-body">
                                 
@@ -1290,7 +1374,7 @@ pre {
                                 </div>
                                 
                                 <a data-toggle="collapse"
-                                   href="#collapseScenarioseleniumcucumberjstest0_5">
+                                   href="#collapseScenarioseleniumcucumberjstest0_6">
                                     <div>
 
                                         <div style="padding-right: 30px">
@@ -1313,7 +1397,7 @@ pre {
                                 </a>
                             </h4>
                         </div>
-                        <div id="collapseScenarioseleniumcucumberjstest0_5"
+                        <div id="collapseScenarioseleniumcucumberjstest0_6"
                              class="panel-collapse collapse">
                             <div class="panel-body">
                                 
@@ -1445,10 +1529,10 @@ pre {
                                 </div>
                                 
                                 <a data-toggle="collapse"
-                                   href="#collapseScenarioseleniumcucumberjstest0_6">
+                                   href="#collapseScenarioseleniumcucumberjstest0_7">
                                     <div>
 
-                                        <div style="padding-right: 50px">
+                                        <div style="padding-right: 30px">
                                             <i class="glyphicon glyphicon-chevron-right"></i>
                                             <i class="glyphicon glyphicon-chevron-down"></i>
                                             <b>Scenario:</b>much more complex stuff
@@ -1456,12 +1540,11 @@ pre {
                                         <div>
                             <span class="label-container">
                               <span class="label label-success"
-                                                               title="2 Steps Passed">2</span>
+                                                               title="3 Steps Passed">3</span>
                               
                               
                               
-                              <span class="label label-danger"
-                                                               title="1 Steps Failed">1</span>
+                              
                               
                             </span>
                                         </div>
@@ -1469,7 +1552,7 @@ pre {
                                 </a>
                             </h4>
                         </div>
-                        <div id="collapseScenarioseleniumcucumberjstest0_6"
+                        <div id="collapseScenarioseleniumcucumberjstest0_7"
                              class="panel-collapse collapse">
                             <div class="panel-body">
                                 
@@ -1555,17 +1638,17 @@ pre {
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-danger" title="Failed"><i
-                                            class="glyphicon glyphicon-remove"></i></span>
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
                                     
                                     
                                     <span class="text">
                         <span class="keyword highlight">Then </span>
-                          <span> the variable should contain 18</span>
+                          <span> the variable should contain 17</span>
                             
                           
                               <span class="step-duration">
-                               2ms
+                               0s
                               </span>
                             
                          
@@ -1576,58 +1659,6 @@ pre {
                       </span>
                                 
                                 
-
-                                    
-                                    <a href="#error0_62"
-                                       data-toggle="collapse" class="toggle">Show Error +</a>
-                                    <div id="error0_62"
-                                         class="collapse">
-                                        <pre class="info show-modal"
-                                             data-toggle="modal"
-                                             style="cursor: pointer"
-                                             data-target="#error-modal-0_62">
-                                            <br> AssertionError
-    + expected - actual
-
-    -17
-    +18
-
-    at World.(anonymous) (C:\SeleniumCucumberJSTest\features\step_definitions\step_definitions.js:89:30)</pre>
-                                    </div>
-
-                                <div class="modal fade" id="error-modal-0_62" tabindex="-1" role="dialog"
-                                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog modal-lg">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal"
-                                                        aria-label="Close"><span aria-hidden="true">&times;</span>
-                                                </button>
-                                                <h4 class="modal-title" id="error-modal-title">
-                                                    Error
-                                                </h4>
-                                            </div>
-                                            <div class="modal-body">
-                                                <h5>
-                                                    <pre><br>AssertionError
-    + expected - actual
-
-    -17
-    +18
-
-    at World.(anonymous) (C:\SeleniumCucumberJSTest\features\step_definitions\step_definitions.js:89:30)</pre>
-                                                </h5>
-                                            </div>
-
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal">
-                                                    Close
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
 
                                     
 
@@ -1687,7 +1718,7 @@ pre {
         google.setOnLoadCallback(function() {drawChart({
                                                             "title" : "Scenarios",
                                                             "failed" : 1,
-                                                            "passed" : 6,
+                                                            "passed" : 7,
                                                             "notdefined" : 0,
                                                             "pending" : 0,
                                                             "skipped" : 0,

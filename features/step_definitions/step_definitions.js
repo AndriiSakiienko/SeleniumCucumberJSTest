@@ -1,36 +1,108 @@
 const assert = require('assert');
+const qassert = require('cucumber-assert');
 const { Given, When, Then } = require('cucumber');
 const http = require("https");
 const chai = require("chai");
-// const setWorldConstructor = Cucumber.setWorldConstructor;
 const expect = chai.expect;
 
 var options = {
-    "method": "post",
-    "hostname": "httpbin.org",
+    "method": "get",
+    "hostname": "skype.com",
     "port": null,
-    "path": "/post",
+    "path": "/uk",
     "headers": {
         "cache-control": "no-cache"
     }
 };
-Given('something', function () {
-    var req = http.request(options, function (res) {
-        var chunks = [];
 
-        res.on("data", function (chunk) {
-            chunks.push(chunk);
-        });
+/*
+const url = require('url')
 
-        res.on("end", function () {
-            var body = Buffer.concat(chunks);
-            //console.log(body.toString());
-        });    
+function getHeaders(myURL) {
+  const parsedURL = url.parse(myURL)
+  const options = {
+    protocol: parsedURL.protocol,
+    hostname: parsedURL.hostname,
+    method: 'HEAD',
+    path: parsedURL.path
+  }
+  let protocolHandler = (parsedURL.protocol === 'https:' ? https : http);
+
+  return new Promise((resolve, reject) => {
+    let req = protocolHandler.request(options, (res) => {
+      resolve(res.headers)
+    })
+    req.on('error', (e) => {
+      reject(e)
+    })
+    req.end()
+  })
+}
+
+getHeaders(myURL).then((headers) => {
+  console.log(headers)
+})
+/**/
+
+function getHeaders() {
+    return new Promise((resolve, reject) => {
+        let req = http.request(options, (res) => {
+            resolve(res.statusCode)
+        })
+        req.on('error', (e) => {
+            reject(e)
+        })
+        req.end()
+    })
+}
+  
+
+
+
+Given('request to url', function () {
+    
+    let tmp = getHeaders().then((statusCode) => {
+        //assert.equal(10, 5);
+        
+        //console.log(statusCode);
+        return statusCode;
     });
-    //console.log(req);
-    //console.log(req.agent.sockets);
-    req.end();
-    expect(10).to.eql(10);
+    expect(tmp).to.equal(301);
+    
+   /* qassert.equal(statusCode, 301).then((statusCode) => {
+        getHeaders().then((statusCode) => {
+
+        });
+    })
+    /*qassert.notEqual(statusCode, 301).then((statusCode) => {
+        return new Promise((resolve, reject) => {
+            http.request(options, (res) => {
+                resolve(res.statusCode)
+            })
+            req.on('error', (e) => {
+                reject(e)
+            })
+            req.end()
+        })
+        /*let req = http.request(options, (res) => {
+            resolve(res.statusCode)
+        })
+        req.on('error', (e) => {
+            reject(e)
+        })
+        req.end()
+    })
+/**/
+});
+
+
+When('enter some date', function(){
+
+});
+
+
+Then('get some response', function(){
+
 });
 
 function isItFriday(today) {
@@ -52,30 +124,6 @@ When('I ask whether it\'s Friday yet', function () {
 Then('I should be told {string}', function (expectedAnswer) {
     assert.equal(this.actualAnswer, expectedAnswer);
 });
-
-// ///// World /////
-// //
-// // Call 'setWorldConstructor' with to your custom world (optional)
-// //
-
-// var CustomWorld = function() {
-//     this.variable = 0;
-//   };
-  
-//   CustomWorld.prototype.setTo = function(number) {
-//     this.variable = parseInt(number);
-//   };
-  
-//   CustomWorld.prototype.incrementBy = function(number) {
-//     this.variable += parseInt(number);
-//   };
-  
-//   setWorldConstructor(CustomWorld);
-  
-///// Step definitions /////
-//
-// use 'Given', 'When' and 'Then' to declare step definitions
-//
 
 Given('a variable set to {int}', function(number) {
     this.variable = parseInt(number);

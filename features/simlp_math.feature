@@ -1,8 +1,13 @@
-Feature: Is it Friday yet?
-    Everybody wants to know when it's Friday
+Feature: explore Cucumber and Gherkin with REST API
+    Test script include different scenarios
+
+Scenario: explore REST API
+    Given request to url
+    When enter some date
+    Then get some response
+
 
 Scenario Outline: Today is or is not Friday
-    Given something
     Given today is "<day>"
     When I ask whether it's Friday yet
     Then I should be told "<answer>"
@@ -27,4 +32,4 @@ Examples:
     | var | increment | result |
     | 100 |         5 |    105 |
     |  99 |      1234 |   1333 |
-    |  12 |         5 |     18 |
+    |  12 |         5 |     17 |

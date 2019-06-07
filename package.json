@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "chai": "^4.2.0",
+    "cucumber-assert": "^1.0.4",
     "require": "^2.4.20",
     "selenium": "^2.20.0"
   },
