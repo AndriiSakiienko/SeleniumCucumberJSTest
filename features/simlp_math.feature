@@ -1,3 +1,4 @@
+ @SomeTag
 Feature: explore Cucumber and Gherkin with REST API
     Test script include different scenarios
 

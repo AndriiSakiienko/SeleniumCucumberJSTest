@@ -1,6 +1,6 @@
 const assert = require('assert');
 const qassert = require('cucumber-assert');
-const { Given, When, Then } = require('cucumber');
+const { Before, Given, When, Then } = require('cucumber');
 const http = require("https");
 const chai = require("chai");
 const expect = chai.expect;
@@ -28,8 +28,13 @@ function getHeaders() {
 }
 
 
+Before(function (){
+    console.log("\n\n\nCalculate 5 + 10 = " + (5+10));
+});
+
+
+
 Given('request to url', function () {
-    
     let tmp = getHeaders().then((statusCode) => {
         //assert.equal(10, 5);
         
